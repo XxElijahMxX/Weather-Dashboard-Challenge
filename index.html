@@ -8,7 +8,7 @@
     <title>My Weather Dashboard</title>
 </head>
 <body>
-    <header class="container">
+    <header class="container text-center bg-info">
         <div class="title">
             <h1>My Weather Dashboard</h1>
         </div>
@@ -17,19 +17,22 @@
         <form class="row 1">
             <div class="form-text col-8">
             <label for="city-search">Please Enter a City</label>
-            <input type="text" placeholder="Search City" id="city-input">
+            <input type="text" class="input" placeholder="Search City" id="city-input">
+            <button class="btn btn-info" type="button" id="search">
+                <i class="fas fa-search"></i>
+            </button>
         </form>
     </div>
 </div>
     <div class="main container">
         <div class="row 2">
             <div class="col md-6 col md-9 info-md-2">
-                <div class="row 3">
-                    <div class="col-12 todaysWeather">
+                <div class="row 3"> 
+                    <div class="col-12" id="todaysWeather">
                         <div class="location">
                             <h2 id="city"></h2>
                             <h3 id="today-date"></h3>
-                            <img id="icon">
+                            <img id="icons">
                         </div>
                         <p class="temp">Temperature: <span id="temperature"></span> F</p>
                         <p class="humid">Humidity: <span id="humidity"></span> %</p>
